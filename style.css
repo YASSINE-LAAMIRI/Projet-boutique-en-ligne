@@ -1,19 +1,15 @@
 a:hover {
-
   background-color: rgb(23, 24, 23);
-  transform: scale(1.1);
-  transition: box-shadow 0.3s ease;
-  color: brown;
-
+  transform: scale(1.1); /* Agrandit légèrement */
+  transition: box-shadow 0.3s ease; 
 }
 
-
-
-body{
-
-  background-color: rgb(4, 43, 1);
-
-  
+@media (max-width: 768px) {
+  a:hover {
+    transform: none; /* Désactive le zoom */
+    transition: box-shadow 0.3s ease;
+    background-color: rgb(23, 24, 23);
+  }
 }
 
 .video-container {
